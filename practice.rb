@@ -83,20 +83,61 @@
 
 # p multiply_array([2, 4, 5, 3, 7])
 
-# 7
+# # 7
 
-def smallest_two_num(array)
-  smallest_num = array[0]
-  second_smallest_num = array[1]
+# def smallest_two_num(array)
+#   if array[0] < array[1]
+#     smallest_num = array[0]
+#     second_smallest_num = array[1]
+#   else
+#     smallest_num = array[1]
+#     second_smallest_num = array[0]
+#   end
+#   array.each do |number|
+#     if number < smallest_num
+#       second_smallest_num = smallest_num
+#       smallest_num = number
+#     elsif number < second_smallest_num
+#       second_smallest_num = number
+#     end
+#   end
+#   return "The two smallest numbers are #{smallest_num} and #{second_smallest_num}"
+# end
+
+# p smallest_two_num([4, 5, 7, 3, 8, 2, 6])
+
+# # 8
+
+# def zero_counter(array)
+#   zeroes = 0
+#   array.each do |number|
+#     digits = number.to_s.split("")
+#     digits.each do |digit|
+#       if digit.to_i == 0
+#         zeroes += 1
+#       end
+#     end
+#   end
+#   return "The number zero occurs #{zeroes} time(s)."
+# end
+
+# p zero_counter([12, 300, 0, 60, 23, 500, 2000, 30])
+
+# 9 
+
+def bigger_than_ten?(array)
+  bigger = true
   array.each do |number|
-    if number < smallest_num
-      second_smallest_num = smallest_num
-      smallest_num = number
-    elsif number < second_smallest_num
-      second_smallest_num = number
+    if number < 10
+      bigger = false
+      break
     end
   end
-  return "The two smallest numbers are #{smallest_num} and #{second_smallest_num}"
+  if bigger
+    return "All numbers are bigger than 10!"
+  elsif !bigger
+    return "The numbers are not all bigger than 10"
+  end
 end
 
-p smallest_two_num([4, 5, 7, 3, 8, 2, 6])
+p biggerThanTen?([12, 9, 14, 34, 56, 78])

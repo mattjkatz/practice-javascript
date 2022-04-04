@@ -78,3 +78,63 @@
 // }
 
 // console.log(multiplyArray([2, 4, 5, 3, 7]));
+
+// // 7
+
+// function smallestTwoNum(array) {
+//   let smallestNum = 0;
+//   let secondSmallestNum = 0;
+//   if (array[0] < array[1]) {
+//     smallestNum = array[0];
+//     secondSmallestNum = array[1];
+//   } else {
+//     secondSmallestNum = array[0];
+//     smallestNum = array[1];
+//   }
+//   array.forEach((number) => {
+//     if (number < smallestNum) {
+//       secondSmallestNum = smallestNum;
+//       smallestNum = number;
+//     } else if (number < secondSmallestNum) {
+//       secondSmallestNum = number;
+//     }
+//   });
+//   // console.log(smallestNum);
+//   // console.log(secondSmallestNum);
+//   return `The two smallest numbers are ${smallestNum} and ${secondSmallestNum}`;
+// }
+
+// console.log(smallestTwoNum([4, 5, 7, 3, 8, 2, 6]));
+
+// // 8
+
+// function zeroCounter(array) {
+//   let zeroes = 0;
+//   array.forEach((number) => {
+//     let digits = number.toString().split("");
+//     for (let i = 0; i < digits.length; i++) {
+//       if (parseInt(digits[i]) === 0) {
+//         zeroes++;
+//       }
+//     }
+//   });
+//   return `The number zero occurs ${zeroes} time(s).`;
+// }
+
+// console.log(zeroCounter([12, 300, 0, 60, 23, 500, 2000, 30]));
+
+// 9
+
+function biggerThanTen(array) {
+  let bigger = true;
+  for (i = 0; i < array.length; i++) {
+    if (array[i] < 10) {
+      bigger = false;
+    }
+  }
+  if (bigger) {
+    return "All numbers are bigger than 10!"
+  ] elseif (!bigger) {
+    return "The numbers are not all bigger than 10"
+  ]
+}
