@@ -123,18 +123,37 @@
 
 // console.log(zeroCounter([12, 300, 0, 60, 23, 500, 2000, 30]));
 
-// 9
+// // 9
 
-function biggerThanTen(array) {
-  let bigger = true;
-  for (i = 0; i < array.length; i++) {
-    if (array[i] < 10) {
-      bigger = false;
-    }
-  }
-  if (bigger) {
-    return "All numbers are bigger than 10!"
-  ] elseif (!bigger) {
-    return "The numbers are not all bigger than 10"
-  ]
-}
+// function biggerThanTen(array) {
+//   let bigger = true;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] < 10) {
+//       bigger = false;
+//     }
+//   }
+//   if (bigger) {
+//     return "All numbers are bigger than 10!";
+//   } else if (!bigger) {
+//     return "The numbers are not all bigger than 10";
+//   }
+// }
+
+// console.log(biggerThanTen([12, 14, 34, 56, 78]));
+
+// // 10
+
+// function aCounter(array) {
+//   let aCount = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     let letters = array[i].split("");
+//     for (let j = 0; j < letters.length; j++) {
+//       if (letters[j] === "a") {
+//         aCount++;
+//       }
+//     }
+//   }
+//   return `The letter 'a' appears ${aCount} time(s).`;
+// }
+
+// console.log(aCounter(["apple", "banana", "orange", "tomato"]));

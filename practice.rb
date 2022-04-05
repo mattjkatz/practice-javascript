@@ -123,21 +123,38 @@
 
 # p zero_counter([12, 300, 0, 60, 23, 500, 2000, 30])
 
-# 9 
+# # 9 
 
-def bigger_than_ten?(array)
-  bigger = true
-  array.each do |number|
-    if number < 10
-      bigger = false
-      break
-    end
-  end
-  if bigger
-    return "All numbers are bigger than 10!"
-  elsif !bigger
-    return "The numbers are not all bigger than 10"
-  end
-end
+# def bigger_than_ten(array)
+#   bigger = true
+#   array.each do |number|
+#     if number < 10
+#       bigger = false
+#       break
+#     end
+#   end
+#   if bigger
+#     return "All numbers are bigger than 10!"
+#   elsif !bigger
+#     return "The numbers are not all bigger than 10"
+#   end
+# end
 
-p biggerThanTen?([12, 9, 14, 34, 56, 78])
+# p biggerThanTen([12, 9, 14, 34, 56, 78])
+
+# # 10
+
+# def a_counter(array)
+#   a_count = 0
+#   array.each do |word|
+#     letters = word.split("")
+#     letters.each do |letter|
+#       if letter.downcase == "a"
+#         a_count += 1
+#       end
+#     end
+#   end
+#   return "The letter 'a' appears #{a_count} time(s)."
+# end
+
+# p a_counter(["apple", "banana", "orange", "tomato"])
