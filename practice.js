@@ -157,3 +157,11 @@
 // }
 
 // console.log(aCounter(["apple", "banana", "orange", "tomato"]));
+
+function graduated(string) {
+  if (string === "May 19th") {
+    return "YOU'RE DONE!!!";
+  }
+}
+
+console.log(graduated("May 19th"));

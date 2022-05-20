@@ -47,21 +47,57 @@
 
 # total_price({"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2})
 
-def coolio(array)
-  index1 = 0
-  index2 = array.length - 1
-  coolio = false
-  (array.length / 2).times do
-    if array[index1] + array[index2] == 100
-      coolio = true
-    else
-      coolio = false
-      break
-    end
-    index1 += 1
-    index2 -= 1
+# def coolio(array)
+#   index1 = 0
+#   index2 = array.length - 1
+#   coolio = false
+#   (array.length / 2).times do
+#     if array[index1] + array[index2] == 100
+#       coolio = true
+#     else
+#       coolio = false
+#       break
+#     end
+#     index1 += 1
+#     index2 -= 1
+#   end
+#   p coolio
+# end
+
+# coolio([90, 20, 70, 100, 30, 80, 10])
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
+
+# All given inputs are in lowercase letters a-z.
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+
+def common_prefix(array)
+  new_array = []
+  array.each do |string|
+    arrayified_string = string.split("")
+    new_array << arrayified_string
   end
-  p coolio
+  index = 0
+  prefix = []
+  if index == new_array.length
+    prefix << common_letter
+  end
+  p new_array
 end
 
-coolio([90, 20, 70, 100, 30, 80, 10])
+common_prefix(["flower","flow","flight"])
