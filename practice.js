@@ -166,9 +166,18 @@
 
 // console.log(graduated("May 19th"));
 
-function randomNumber() {
-  var randomNumber = Math.floor(Math.random() * 100) + 1;
-  console.log(randomNumber);
+// function randomNumber() {
+//   var randomNumber = Math.floor(Math.random() * 100) + 1;
+//   console.log(randomNumber);
+// }
+
+// randomNumber();
+
+function randomNumbers(int) {
+  for (let i = 0; i < int; i++) {
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(randomNumber);
+  }
 }
 
-randomNumber();
+randomNumbers(80);
