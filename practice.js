@@ -191,3 +191,21 @@
 // }
 
 // skips([2, 1, 1, 1, 4, 4, 23, 3, 2, 2, 6, 4, 4, 4, 4, 2, 4]);
+
+function fizzBuzz(ar) {
+  let newAr = [];
+  ar.forEach((int) => {
+    if (int % 3 === 0 && int % 5 === 0) {
+      newAr.push("FizzBuzz");
+    } else if (int % 3 === 0) {
+      newAr.push("Fizz");
+    } else if (int % 5 === 0) {
+      newAr.push("Buzz");
+    } else {
+      newAr.push(int);
+    }
+  });
+  console.log(newAr);
+}
+
+fizzBuzz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17]);
