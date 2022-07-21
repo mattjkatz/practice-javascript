@@ -173,11 +173,21 @@
 
 // randomNumber();
 
-function randomNumbers(int) {
-  for (let i = 0; i < int; i++) {
-    var randomNumber = Math.floor(Math.random() * 100) + 1;
-    console.log(randomNumber);
+// function randomNumbers(int) {
+//   for (let i = 0; i < int; i++) {
+//     var randomNumber = Math.floor(Math.random() * 100) + 1;
+//     console.log(randomNumber);
+//   }
+// }
+
+// randomNumbers(80);
+
+function skips(ar) {
+  var newAr = [];
+  for (let i = 0; i < ar.length; i += ar[i]) {
+    newAr.push(ar[i]);
   }
+  console.log(newAr);
 }
 
-randomNumbers(80);
+skips([2, 1, 1, 1, 4, 4, 23, 3, 2, 2, 6, 4, 4, 4, 4, 2, 4]);
