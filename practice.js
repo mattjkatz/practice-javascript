@@ -211,11 +211,11 @@
 // fizzBuzz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17]);
 
 function rotate(ar) {
-  for (let i = 0; i < ar.length; i++) {
-    for (let j = 0; j < ar[i].length; j++) {
-      console.log("hi");
-    }
-    console.log("bye");
+  ar.push(ar[1][1]);
+  let count = 0;
+  while (count < 9) {
+    console.log("basic testing");
+    count++;
   }
 }
 
