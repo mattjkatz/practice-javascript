@@ -212,11 +212,22 @@
 
 function rotate(ar) {
   ar.push(ar[1][1]);
-  let count = 0;
-  while (count < 9) {
-    console.log("basic testing");
-    count++;
-  }
+  ar[1][1] = ar[0][2];
+  ar[0][2] = ar[0][0];
+  ar[0][0] = ar[2][0];
+  ar[2][0] = ar[2][2];
+  ar[2][2] = ar[1][1];
+
+  ar[1][1] = ar[1][2];
+  ar[1][2] = ar[0][1];
+  ar[0][1] = ar[1][0];
+  ar[1][0] = ar[2][1];
+  ar[2][1] = ar[1][1];
+
+  ar[1][1] = ar[3];
+  ar.splice(3);
+
+  console.log(ar);
 }
 
 rotate([
