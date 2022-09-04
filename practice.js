@@ -181,6 +181,10 @@ function rotate(ar) {
   console.log(ar);
 }
 
+function mergeSort(ar) {
+  return ar;
+}
+
 // console.log([2, 4, 5, 7, 12]);
 
 // console.log(smallestString(["hey", "hello", "hi", "whats up?"]));
